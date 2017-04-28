@@ -1,8 +1,8 @@
 """
 Script where is defined the main method to complete the information for MovieTweetings.
 
-@author Jose L. Jorro-Aragoneses
-@version 1.0
+:author: Jose L. Jorro-Aragoneses
+:version: 1.0
 """
 
 import src.es.ucm.tmcd.files.CSVManager as csv
@@ -27,13 +27,13 @@ def obtain_relationships(api, users):
         for y in range(x + 1, len(users.keys())):
             user1 = users[x]
             user2 = users[y]
-            tw.areFollowed(api, user1, user2)
+            tw.getRelationship(api, user1, user2)
 
 
 def main():
 
     # Read all users from CSV file
-    users = csv.readUsersCSV(USERS_FILE)
+    users = csv.read_users(USERS_FILE)
 
     # Obtain client from Twitter to call all functions
     api = tw.getClient()
