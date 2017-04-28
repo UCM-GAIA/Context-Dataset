@@ -5,8 +5,8 @@ Script where is defined the main method to complete the information for MovieTwe
 :version: 1.0
 """
 
-import src.es.ucm.tmcd.files.CSVManager as csv
-import TwitterAPI as tw
+from es.ucm.tmcd.files import CSVManager as csv
+from es.ucm.tmcd.api import TwitterAPI as tw
 
 """
 Definition of all constants used in the script.
