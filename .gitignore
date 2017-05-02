@@ -1,2 +1,16 @@
 # MAC Auxiliar files
 .DS_Store
+
+# Eclipse ignore files
+/.metadata/
+RemoteSystemsTempFiles
+*/.classpath
+*/.project
+*/.settings
+
+# Gradle ignore files
+.gradle
+/build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
